@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "flaticon_mycollection";
+    src: url("./flaticon_mycollection.ttf?d30422422ed0900644fdda7e7cb9e145") format("truetype"),
+url("./flaticon_mycollection.woff?d30422422ed0900644fdda7e7cb9e145") format("woff"),
+url("./flaticon_mycollection.woff2?d30422422ed0900644fdda7e7cb9e145") format("woff2"),
+url("./flaticon_mycollection.eot?d30422422ed0900644fdda7e7cb9e145#iefix") format("embedded-opentype"),
+url("./flaticon_mycollection.svg?d30422422ed0900644fdda7e7cb9e145#flaticon_mycollection") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-size: 50px;
+}
+
+.flaticon-paragliding-1:before {
+    content: "\f101";
+}
+.flaticon-parachute:before {
+    content: "\f102";
+}
+.flaticon-faq-1:before {
+    content: "\f103";
+}
+.flaticon-faq-2:before {
+    content: "\f104";
+}
+.flaticon-id-card:before {
+    content: "\f105";
+}
+.flaticon-team:before {
+    content: "\f106";
+}
+.flaticon-team-1:before {
+    content: "\f107";
+}
+.flaticon-paragliding-3:before {
+    content: "\f108";
+}
+.flaticon-teacher:before {
+    content: "\f109";
+}
+.flaticon-instructor:before {
+    content: "\f10a";
+}

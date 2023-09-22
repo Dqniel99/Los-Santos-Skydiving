@@ -1,0 +1,65 @@
+$flaticon_mycollection-font: "flaticon_mycollection";
+
+@font-face {
+    font-family: $flaticon_mycollection-font;
+    src: url("./flaticon_mycollection.ttf?d30422422ed0900644fdda7e7cb9e145") format("truetype"),
+url("./flaticon_mycollection.woff?d30422422ed0900644fdda7e7cb9e145") format("woff"),
+url("./flaticon_mycollection.woff2?d30422422ed0900644fdda7e7cb9e145") format("woff2"),
+url("./flaticon_mycollection.eot?d30422422ed0900644fdda7e7cb9e145#iefix") format("embedded-opentype"),
+url("./flaticon_mycollection.svg?d30422422ed0900644fdda7e7cb9e145#flaticon_mycollection") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_mycollection-map: (
+    "paragliding-1": "\f101",
+    "parachute": "\f102",
+    "faq-1": "\f103",
+    "faq-2": "\f104",
+    "id-card": "\f105",
+    "team": "\f106",
+    "team-1": "\f107",
+    "paragliding-3": "\f108",
+    "teacher": "\f109",
+    "instructor": "\f10a",
+);
+
+.flaticon-paragliding-1:before {
+    content: map-get($flaticon_mycollection-map, "paragliding-1");
+}
+.flaticon-parachute:before {
+    content: map-get($flaticon_mycollection-map, "parachute");
+}
+.flaticon-faq-1:before {
+    content: map-get($flaticon_mycollection-map, "faq-1");
+}
+.flaticon-faq-2:before {
+    content: map-get($flaticon_mycollection-map, "faq-2");
+}
+.flaticon-id-card:before {
+    content: map-get($flaticon_mycollection-map, "id-card");
+}
+.flaticon-team:before {
+    content: map-get($flaticon_mycollection-map, "team");
+}
+.flaticon-team-1:before {
+    content: map-get($flaticon_mycollection-map, "team-1");
+}
+.flaticon-paragliding-3:before {
+    content: map-get($flaticon_mycollection-map, "paragliding-3");
+}
+.flaticon-teacher:before {
+    content: map-get($flaticon_mycollection-map, "teacher");
+}
+.flaticon-instructor:before {
+    content: map-get($flaticon_mycollection-map, "instructor");
+}
