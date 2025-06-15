@@ -47,7 +47,7 @@
 	<div class="d-flex flex-column">
 
 		<!-- Navigation Bar Start -->
-		<nav class="navbar navbar-expand-lg bg-light">
+		<nav class="navbar navbar-expand-lg transparent-navbar">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,7 @@
 	
 	<!-- Main Header Start -->
 <div class="main">
-                <section class="hero-banner hero-with-ratings" id="home-section" style="background-image:url('assets/images/banner1.png');">
+                <section class="hero-banner hero-with-ratings" id="home-section" style="background-image:url('assets/images/banner1alt.png');">
     <div class="container-fluid hero-banner__content">
         <div class="row">
             <div class="col-md-7">
@@ -159,31 +159,72 @@
         </div>
         <div class="row">
 
-                        
-                <!-- Start Staff  -->
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+               <!-- Start Staff  -->
+               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
-                    <div class="card gen-col-card__card">
-                                                <img src="assets/images/gordon.png" alt="" class="card-img-top col-card__img">
-                        <div class="card-body gen-col-card__body">
-                            <h3 class="gen-col-card__title">Gordon Graves</h3>
-                            <h6>Advanced Course Instructor</h6>
-                            <p><a href="#" data-bs-toggle="modal" data-bs-target="#team-0" class="btn btn-secondary">Read more</a></p>
-							<a href="https://gov.eclipse-rp.net/ucp.php?i=pm&mode=compose&u=9884">
-							<div class="email-button btn btn-secondary"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-					       </a>
-                        </div>
+                <div class="card gen-col-card__card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" class="card-img-top col-card__img">
+                    <div class="card-body gen-col-card__body">
+                        <h3 class="gen-col-card__title">Gordon Graves</h3>
+                        <h6>Beginner Course Instructor</h6>
+                        <p><a href="#" data-bs-toggle="modal" data-bs-target="#team-0" class="btn btn-secondary">Read more</a></p>
+                        <a href="https://gov.eclipse-rp.net/ucp.php?i=pm&mode=compose&u=3714">
+                        <div class="email-button btn btn-secondary"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        </a>
+						<div class="phone-button btn btn-secondary gordon-phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
                     </div>
-
-
                 </div>
-                <!-- End of Staff -->
-                            
-                <!-- Start Staff  -->
+
+
+            </div>
+							<!-- Phone Copy Start-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $(".gordon-phone").click(function (event) {
+                event.preventDefault();
+                CopyToClipboard("4773925", true, "Phone Number Copied");
+            });
+        });
+
+        function CopyToClipboard(value, showNotification, notificationText) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(value).select();
+            document.execCommand("copy");
+            $temp.remove();
+
+            if (typeof showNotification === 'undefined') {
+                showNotification = true;
+            }
+            if (typeof notificationText === 'undefined') {
+                notificationText = "Copied to clipboard";
+            }
+
+            var notificationTag = $("div.copy-notification");
+            if (showNotification && notificationTag.length == 0) {
+                notificationTag = $("<div/>", { "class": "copy-notification", text: notificationText });
+                $("body").append(notificationTag);
+
+                notificationTag.fadeIn("slow", function () {
+                    setTimeout(function () {
+                        notificationTag.fadeOut("slow", function () {
+                            notificationTag.remove();
+                        });
+                    }, 1000);
+                });
+            }
+        }
+</script>
+		<!-- Phone Copy End-->
+			
+        <!-- End of Staff -->
+
+      <!-- Start Staff  -->
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
                     <div class="card gen-col-card__card">
-                                                <img src="assets/images/jason.png" alt="" class="card-img-top col-card__img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" class="card-img-top col-card__img">
                         <div class="card-body gen-col-card__body">
                             <h3 class="gen-col-card__title">Jason Castillo</h3>
                             <h6>Beginner Course Instructor</h6>
@@ -191,18 +232,60 @@
 							<a href="https://gov.eclipse-rp.net/ucp.php?i=pm&mode=compose&u=3714">
 							<div class="email-button btn btn-secondary"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 							</a>
+							<div class="phone-button btn btn-secondary jason-phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         </div>
                     </div>
 
 
                 </div>
-                <!-- End of Staff -->
+								<!-- Phone Copy Start-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $(".jason-phone").click(function (event) {
+                event.preventDefault();
+                CopyToClipboard("4773925", true, "Phone Number Copied");
+            });
+        });
+
+        function CopyToClipboard(value, showNotification, notificationText) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(value).select();
+            document.execCommand("copy");
+            $temp.remove();
+
+            if (typeof showNotification === 'undefined') {
+                showNotification = true;
+            }
+            if (typeof notificationText === 'undefined') {
+                notificationText = "Copied to clipboard";
+            }
+
+            var notificationTag = $("div.copy-notification");
+            if (showNotification && notificationTag.length == 0) {
+                notificationTag = $("<div/>", { "class": "copy-notification", text: notificationText });
+                $("body").append(notificationTag);
+
+                notificationTag.fadeIn("slow", function () {
+                    setTimeout(function () {
+                        notificationTag.fadeOut("slow", function () {
+                            notificationTag.remove();
+                        });
+                    }, 1000);
+                });
+            }
+        }
+</script>
+		<!-- Phone Copy End-->
+				
+        <!-- End of Staff -->
                             
                 <!-- Start Staff  -->
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
                     <div class="card gen-col-card__card">
-                                                <img src="assets/images/tyrone.png" alt="" class="card-img-top col-card__img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" class="card-img-top col-card__img">
                         <div class="card-body gen-col-card__body">
                             <h3 class="gen-col-card__title">Tyrone Cox</h3>
                             <h6>Solo Jump Instructor</h6>
@@ -210,30 +293,117 @@
 							<a href="https://gov.eclipse-rp.net/ucp.php?i=pm&mode=compose&u=5548">
 							<div class="email-button btn btn-secondary"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 							</a>
+							<div class="phone-button btn btn-secondary tyrone-phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         </div>
                     </div>
 
 
                 </div>
-                <!-- End of Staff -->
-                            
+								<!-- Phone Copy Start-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $(".tyrone-phone").click(function (event) {
+                event.preventDefault();
+                CopyToClipboard("4773925", true, "Phone Number Copied");
+            });
+        });
+
+        function CopyToClipboard(value, showNotification, notificationText) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(value).select();
+            document.execCommand("copy");
+            $temp.remove();
+
+            if (typeof showNotification === 'undefined') {
+                showNotification = true;
+            }
+            if (typeof notificationText === 'undefined') {
+                notificationText = "Copied to clipboard";
+            }
+
+            var notificationTag = $("div.copy-notification");
+            if (showNotification && notificationTag.length == 0) {
+                notificationTag = $("<div/>", { "class": "copy-notification", text: notificationText });
+                $("body").append(notificationTag);
+
+                notificationTag.fadeIn("slow", function () {
+                    setTimeout(function () {
+                        notificationTag.fadeOut("slow", function () {
+                            notificationTag.remove();
+                        });
+                    }, 1000);
+                });
+            }
+        }
+</script>
+		<!-- Phone Copy End-->
+		
+        <!-- End of Staff -->
+                          
+
+						  
                 <!-- Start Staff  -->
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
                     <div class="card gen-col-card__card">
-                                                <img src="assets/images/don.png" alt="" class="card-img-top col-card__img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" class="card-img-top col-card__img" style="object-position: left;">
                         <div class="card-body gen-col-card__body">
-                            <h3 class="gen-col-card__title">Don Mozzarella</h3>
+                            <h3 class="gen-col-card__title">Milan Sterling</h3>
                             <h6>Tandem Instructor</h6>
                             <p><a href="#" data-bs-toggle="modal" data-bs-target="#team-3" class="btn btn-secondary">Read more</a></p>
 							<a href="https://gov.eclipse-rp.net/ucp.php?i=pm&mode=compose&u=10836">
 							<div class="email-button btn btn-secondary"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 							</a>
+							<div class="phone-button btn btn-secondary milan-phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         </div>
                     </div>
 
 
                 </div>
+				<!-- Phone Copy Start-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $(".milan-phone").click(function (event) {
+                event.preventDefault();
+                CopyToClipboard("4773925", true, "Phone Number Copied");
+            });
+        });
+
+        function CopyToClipboard(value, showNotification, notificationText) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(value).select();
+            document.execCommand("copy");
+            $temp.remove();
+
+            if (typeof showNotification === 'undefined') {
+                showNotification = true;
+            }
+            if (typeof notificationText === 'undefined') {
+                notificationText = "Copied to clipboard";
+            }
+
+            var notificationTag = $("div.copy-notification");
+            if (showNotification && notificationTag.length == 0) {
+                notificationTag = $("<div/>", { "class": "copy-notification", text: notificationText });
+                $("body").append(notificationTag);
+
+                notificationTag.fadeIn("slow", function () {
+                    setTimeout(function () {
+                        notificationTag.fadeOut("slow", function () {
+                            notificationTag.remove();
+                        });
+                    }, 1000);
+                });
+            }
+        }
+</script>
+		<!-- Phone Copy End-->
+		
+		<!-- End of Staff -->
 </div>
                             
 				
@@ -245,7 +415,7 @@
 							</div>
 			
     <!-- Team Member Information -->
-    <div class="modal modal-team fade" id="team-0" tabindex="-1" aria-labelledby="teamLabel-0" aria-hidden="true">
+    <div class="modal modal-team fade" id="team-0" tabindex="-0" aria-labelledby="teamLabel-0" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -254,8 +424,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-7">                    
-                            
+                        <div class="col-md-7">
+                                                    
                                                         
                             
                                                             <h6>About Gordon Graves</h6>
@@ -263,7 +433,7 @@
                             
                         </div>
                         <div class="col-md-5">
-                            <img src="#" alt="" class="card-img-top col-card__img img-fluid">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" class="card-img-top col-card__img img-fluid">
                         </div>
                     </div>
 
@@ -274,8 +444,9 @@
             </div>
         </div>
     </div>
+    <!-- End of Team Member Information -->
 
-    
+
     <!-- Team Member Information -->
     <div class="modal modal-team fade" id="team-1" tabindex="-1" aria-labelledby="teamLabel-1" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -295,7 +466,7 @@
                             
                         </div>
                         <div class="col-md-5">
-                            <img src="#" alt="" class="card-img-top col-card__img img-fluid">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" class="card-img-top col-card__img img-fluid">
                         </div>
                     </div>
 
@@ -306,7 +477,7 @@
             </div>
         </div>
     </div>
-
+    <!-- End of Team Member Information -->
     
     <!-- Team Member Information -->
     <div class="modal modal-team fade" id="team-2" tabindex="-1" aria-labelledby="teamLabel-2" aria-hidden="true">
@@ -338,7 +509,7 @@
             </div>
         </div>
     </div>
-
+    <!-- End of Team Member Information -->
     
     <!-- Team Member Information -->
     <div class="modal modal-team fade" id="team-3" tabindex="-1" aria-labelledby="teamLabel-3" aria-hidden="true">
@@ -370,7 +541,7 @@
             </div>
         </div>
     </div>
-
+    <!-- End of Team Member Information -->
     
     <!-- Team Member Information -->
     <div class="modal modal-team fade" id="team-4" tabindex="-1" aria-labelledby="teamLabel-4" aria-hidden="true">
@@ -402,7 +573,7 @@
             </div>
         </div>
     </div>
-
+    <!-- End of Team Member Information -->
     
     <!-- Team Member Information -->
     <div class="modal modal-team fade" id="team-5" tabindex="-1" aria-labelledby="teamLabel-5" aria-hidden="true">
@@ -434,7 +605,7 @@
             </div>
         </div>
     </div>
-
+    <!-- End of Team Member Information -->
     
     <!-- Team Member Information -->
     <div class="modal modal-team fade" id="team-6" tabindex="-1" aria-labelledby="teamLabel-6" aria-hidden="true">
@@ -466,7 +637,7 @@
             </div>
         </div>
     </div>
-
+    <!-- End of Team Member Information -->
     
     <!-- Team Member Information -->
     <div class="modal modal-team fade" id="team-7" tabindex="-1" aria-labelledby="teamLabel-7" aria-hidden="true">
@@ -498,6 +669,8 @@
             </div>
         </div>
     </div>
+    <!-- End of Team Member Information -->
+
 			<!-- Team Page End -->
 			
 			<!-- Divide Banner Start-->		
@@ -668,7 +841,7 @@
                 <span>2 Shank Street.</span> 
                 <span>Los Santos, San Andreas.</span> 
               </div>
-<button style="margin-top: 7px;border-radius: 15px;background-color: #ffff;" class="hvr-radial-out"><a class="btn theme">Copy Address</a></button>
+<button style="margin-top: 7px;border-radius: 15px;background-color: #ffff;" class="hvr-radial-out addresscopy"><a class="btn theme addresscopy">Copy Address</a></button>
             </div>            
           </div>          
         </div>  
@@ -676,7 +849,7 @@
 			<!-- Copy Address Script Start -->
 <script type="text/javascript">
         $(document).ready(function () {
-            $("button").click(function (event) {
+            $(".addresscopy").click(function (event) {
                 event.preventDefault();
                 CopyToClipboard("/setgps 2 Shank St", true, "Address Copied");
             });
@@ -712,22 +885,7 @@
         }
 </script>
 			<!-- Copy Address Script End -->
-
-        <div class="col-md-4">
-          <div class="contact-info">
-            <div class="contact-info-item">
-              <div class="contact-info-icon">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="contact-info-text">
-                <h2>Phone Number</h2>
-                <span>324-7120</span> 
-                <span>535-3201</span> 
-                <span>293-4292</span> 
-              </div>
-            </div>            
-          </div>                
-        </div>         
+      
 </div>		
     </div>
 
@@ -748,8 +906,8 @@
             <div class="col-md-10">
                                 
                 <p style="
-    margin-bottom: -12px;
-">© Los Santos Skydiving 2023 - All Rights Reserved.</p>
+    margin-bottom: 0px;
+">© Los Santos Skydiving 2025 - All Rights Reserved.</p>
             </div>
             
         </div>
@@ -760,6 +918,22 @@
 <script type='text/javascript' src='cdn.jsdelivr.net/npm/axios/dist/axios.min5aa1.js?ver=0.27.2' id='axios-js'></script>
 <script type='text/javascript' src='assets/js/vendor/bootstrap/bootstrap.bundle.minbb49.js?ver=5.2.2' id='bsjs-js'></script>
 <script type='text/javascript' src='assets/js/main20b9.js?ver=1.0.2' id='main-js-js'></script>
+<script>
+  const navbar = document.querySelector('.navbar');
 
+  function updateNavbar() {
+    if (window.scrollY > 0) {
+      navbar.classList.remove('transparent-navbar');
+      navbar.classList.add('solid-navbar');
+    } else {
+      navbar.classList.add('transparent-navbar');
+      navbar.classList.remove('solid-navbar');
+    }
+  }
+
+  // Initialize and bind to scroll
+  window.addEventListener('scroll', updateNavbar);
+  document.addEventListener('DOMContentLoaded', updateNavbar);
+</script>
 </body>
 </html>
