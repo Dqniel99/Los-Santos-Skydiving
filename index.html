@@ -353,7 +353,7 @@
                             <h3 class="gen-col-card__title">Milan Sterling</h3>
                             <h6>Tandem Instructor</h6>
                             <p><a href="#" data-bs-toggle="modal" data-bs-target="#team-3" class="btn btn-secondary">Read more</a></p>
-							<a href="https://gov.eclipse-rp.net/ucp.php?i=pm&mode=compose&u=10836">
+							<a href="https://gov.eclipse-rp.net/memberlist.php?mode=viewprofile&u=2771">
 							<div class="email-button btn btn-secondary"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 							</a>
 							<div class="phone-button btn btn-secondary milan-phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
@@ -404,6 +404,67 @@
 		<!-- Phone Copy End-->
 		
 		<!-- End of Staff -->
+
+         <!-- Start Staff  -->
+               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+
+                <div class="card gen-col-card__card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" class="card-img-top col-card__img">
+                    <div class="card-body gen-col-card__body">
+                        <h3 class="gen-col-card__title">Evan Valentine</h3>
+                        <h6>Lead Pilot</h6>
+                        <p><a href="#" data-bs-toggle="modal" data-bs-target="#team-4" class="btn btn-secondary">Read more</a></p>
+                        <a href="https://gov.eclipse-rp.net/memberlist.php?mode=viewprofile&u=21997">
+                        <div class="email-button btn btn-secondary"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        </a>
+						<div class="phone-button btn btn-secondary evan-phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+
+
+            </div>
+							<!-- Phone Copy Start-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $(".evan-phone").click(function (event) {
+                event.preventDefault();
+                CopyToClipboard("4831999", true, "Phone Number Copied");
+            });
+        });
+
+        function CopyToClipboard(value, showNotification, notificationText) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(value).select();
+            document.execCommand("copy");
+            $temp.remove();
+
+            if (typeof showNotification === 'undefined') {
+                showNotification = true;
+            }
+            if (typeof notificationText === 'undefined') {
+                notificationText = "Copied to clipboard";
+            }
+
+            var notificationTag = $("div.copy-notification");
+            if (showNotification && notificationTag.length == 0) {
+                notificationTag = $("<div/>", { "class": "copy-notification", text: notificationText });
+                $("body").append(notificationTag);
+
+                notificationTag.fadeIn("slow", function () {
+                    setTimeout(function () {
+                        notificationTag.fadeOut("slow", function () {
+                            notificationTag.remove();
+                        });
+                    }, 1000);
+                });
+            }
+        }
+</script>
+		<!-- Phone Copy End-->
+			
+        <!-- End of Staff -->
 </div>
                             
 				
@@ -525,8 +586,8 @@
                                                     
                                                         
                             
-                                                            <h6>About Don Mozzarella</h6>
-                                <p>Meet Don Mozzarella, our Tandem Jump Instructor extraordinaire at Los Santos Skydiving. Don is your go-to guru for experiencing the thrill of freefall while securely harnessed to an expert. With a warm smile and a reassuring demeanor, he'll turn your nerves into excitement. Don's dedication to safety and passion for adventure ensure that every tandem jump is a heart-pounding, unforgettable experience. Join him for a dive into the skies you'll cherish forever.</p>
+                                                            <h6>About Milan Sterling</h6>
+                                <p>Meet Milan Sterling, our Tandem Jump Instructor extraordinaire at Los Santos Skydiving. Milan is your go-to guru for experiencing the thrill of freefall while securely harnessed to an expert. With a warm smile and a reassuring demeanor, he'll turn your nerves into excitement. Milan's dedication to safety and passion for adventure ensure that every tandem jump is a heart-pounding, unforgettable experience. Join him for a dive into the skies you'll cherish forever.</p>
                             
                         </div>
                         <div class="col-md-5">
@@ -549,7 +610,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title" id="teamLabel-4">N/A</h3>
-                    <h5>N/A</h5>
+                    <h5>Evan Valentine</h5>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -557,8 +618,8 @@
                                                     
                                                         
                             
-                                                            <h6>About N/A</h6>
-                                <p>N/A</p>
+                                                            <h6>About Evan Valentine</h6>
+                                <p>With over a decade of flight experience, Evan is the lead pilot at Los Santos Skydiving. Known for his steady hand and calm under pressure, he’s flown thousands of successful jumps. Whether it’s your first time or your hundredth, Evan’s the one you want in the cockpit.</p>
                             
                         </div>
                         <div class="col-md-5">
@@ -703,6 +764,7 @@
   <!--price tab-->
   <div class="plan">
     <div class="plan-inner">
+    <div class="hot">Hot!</div>
       <div class="entry-title">
         <h3>Solo Jump</h3>
         <div class="price">$3,000<span></span>
@@ -726,7 +788,6 @@
   <!--price tab-->
   <div class="plan basic">
     <div class="plan-inner">
-      <div class="hot">Hot!</div>
       <div class="entry-title">
         <h3>Tandem Jump</h3>
         <div class="price">$2,500</div>
